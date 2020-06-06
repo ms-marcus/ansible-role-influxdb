@@ -34,6 +34,8 @@
             {%- if config_coordinator.extend(config_parameters) -%}{%- endif -%}
         {%- elif config_name == 'retention' -%}
             {%- if config_retention.extend(config_parameters) -%}{%- endif -%}
+        {%- elif config_name == 'opentsdb' -%}
+            {%- if config_opentsdb.extend(config_parameters) -%}{%- endif -%}
         {%- elif config_name == 'shard_precreation' -%}
             {%- if config_shard_precreation.extend(config_parameters) -%}{%- endif -%}
         {%- elif config_name == 'monitor' -%}
